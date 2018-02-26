@@ -28,9 +28,9 @@ is negative and the minimum is therefore ahead of us.
 
 We then proceed to update values of x and y, notice that we are subtracting from the starting x or y value. This is done since a negative slope tells us that we need to add to the x or y value and we must remember that subtracting a negative value is the same as addition. This makes equally good sense if we have a positive slope, then we know that we have passed the minimum and we then have to subtract from the given x or y value.
 
-updated_x = x - (df/dx * learningRate)
+updated_x = x - (dz/dx * learningRate)
 
-updated_y = y - (df/dy * learningRate)
+updated_y = y - (dz/dy * learningRate)
 
 The learning rate is there to make sure that we don't take to big steps towards the minimum. We want to make
 sure not to overshoot it. 
