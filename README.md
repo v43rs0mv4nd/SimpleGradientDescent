@@ -33,8 +33,8 @@ updated_x = x - (dz/dx * learningRate)
 updated_y = y - (dz/dy * learningRate)
 
 The learning rate is there to make sure that we don't take to big steps towards the minimum. We want to make
-sure not to overshoot it. 
+sure not to overshoot it. This process is then repeated a fitting number of times. Each time the new and updated x and y values are fed back into the loop. Then we calculate new gradients according to the updated values and on and on...
 
-This process is then repeated a fitting number of times. Each time the new and updated x and y values are fed back into the loop. Eventually we arrive at the minimum, and it should correspond with the minimum point from the graph below.
+Eventually we arrive at the minimum, and it should correspond with the minimum point from the graph below.
 
 ![alt text](ellipticParaboloid.jpg)
